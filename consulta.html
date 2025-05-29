@@ -113,14 +113,11 @@
             <div class="filter-dropdown">
                 <select class="filter-select" id="encaminhamentoFilter">
                     <option value="">Todos os Encaminhamentos</option>
-                    <option value="psicologia">Psicologia</option>
-                    <option value="fonoaudiologia">Fonoaudiologia</option>
-                    <option value="assistente_social">Assistente Social</option>
-                    <option value="neurologia">Neurologia</option>
-                    <option value="oftalmologia">Oftalmologia</option>
-                    <option value="otorrinolaringologia">Otorrinolaringologia</option>
-                    <option value="fisioterapia">Fisioterapia</option>
-                    <option value="terapia_ocupacional">Terapia Ocupacional</option>
+                    <option value="neurologia">Monitoria</option>
+                    <option value="fonoaudiologia">Pedagogia</option>
+                    <option value="psicologia">Diretoria</option>
+                    <option value="assistente_social">Responsaveis</option>
+                    <option value="oftalmologia">Patrulha Escolar</option>
                     <option value="nenhum">Nenhum</option>
                 </select>
             </div>
@@ -132,9 +129,31 @@
                     <option value="boa">Boa (85-94%)</option>
                     <option value="regular">Regular (75-84%)</option>
                     <option value="baixa">Baixa (60-74%)</option>
-                    <option value="critica">Crítica (< 60%)</option>
+                    <option value="critica">Em risco (< 60%)</option>
                 </select>
             </div>
+
+            <div class="filter-dropdown">
+                <select class="filter-select" id="Ocorrencia">
+                    <option value="">Todas as Ocorrencia</option>
+                    <option value="boa"> Leve</option>
+                    <option value="regular">Medio</option>
+                    <option value="baixa">Grave</option>
+                    <option value="critica">Gravissimo</option>
+                </select>
+            </div>
+
+            <div class="filter-dropdown">
+                <select class="filter-select" id="frequenciaFilter">
+                    <option value="">Todos os F.O</option>
+                    <option value="excelente">Excelente (<4,0) </option>
+                    <option value="boa">Bom (1,0- 4,0)</option>
+                    <option value="regular">Regular (-1,0 a 1,0)</option>
+                    <option value="baixa">Baixo (-1,0 a -4,0)</option>
+                    <option value="baixa">Baixo (>-4,0)</option>
+                </select>
+            </div>
+            
             
             <button class="clear-filters" id="clearFilters">
                 Limpar Filtros
@@ -158,7 +177,7 @@
             <div class="info-row">
                 <span class="info-label">Encaminhamento:</span>
                 <span class="info-value">
-                    <span class="encaminhamento-value">Psicologia</span>
+                    <span class="encaminhamento-value">Monitoria</span>
                 </span>
             </div>
             <div class="info-row">

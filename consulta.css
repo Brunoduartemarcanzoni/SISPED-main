@@ -232,6 +232,9 @@
             margin-top: 20px;
             max-width: 600px;
             width: 90%;
+            justify-content: center;
+            align-items: center;
+            
         }
 
         .info-row {
@@ -342,6 +345,7 @@
                 min-width: 160px;
             }
         }
+        
 
         /* Media query para dispositivos móveis */
         @media (max-width: 576px) {
