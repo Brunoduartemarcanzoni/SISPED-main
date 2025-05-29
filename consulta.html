@@ -45,7 +45,7 @@
                 <div class="nav-text">CADASTRO</div>
             </a>
             <!-- Item de navegação: F/O (Fator/Operação) -->
-            <a href="teste_fo.html" class="nav-item">
+            <a href="fato.html" class="nav-item">
                 <div class="nav-icon-container">
                     <!-- Ícones sobrepostos para criar o símbolo -/+ -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -107,18 +107,20 @@
             <!-- Botão para limpar o campo de pesquisa -->
             <button class="clear-search" id="clearSearch">✕</button>
         </div>
-
+         <section class="negocio">
         <!-- Container dos filtros dropdown -->
         <div class="filters-container">
             <div class="filter-dropdown">
                 <select class="filter-select" id="encaminhamentoFilter">
                     <option value="">Todos os Encaminhamentos</option>
-                    <option value="psicologia">Psicologia Escolar</option>
-                    <option value="fonoaudiologia">Patrulha Escolar</option>
-                    <option value="assistente_social">Direção</option>
-                    <option value="neurologia">Responsavel/Família</option>
-                    <option value="oftalmologia">Conselho do Tutelar</option>
-                    <option value="otorrinolaringologia">Monitoria</option>
+                    <option value="psicologia">Psicologia</option>
+                    <option value="fonoaudiologia">Fonoaudiologia</option>
+                    <option value="assistente_social">Assistente Social</option>
+                    <option value="neurologia">Neurologia</option>
+                    <option value="oftalmologia">Oftalmologia</option>
+                    <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                    <option value="fisioterapia">Fisioterapia</option>
+                    <option value="terapia_ocupacional">Terapia Ocupacional</option>
                     <option value="nenhum">Nenhum</option>
                 </select>
             </div>
@@ -130,7 +132,7 @@
                     <option value="boa">Boa (85-94%)</option>
                     <option value="regular">Regular (75-84%)</option>
                     <option value="baixa">Baixa (60-74%)</option>
-                    <option value="critica">Em risco (< 60%)</option>
+                    <option value="critica">Crítica (< 60%)</option>
                 </select>
             </div>
             
@@ -156,7 +158,13 @@
             <div class="info-row">
                 <span class="info-label">Encaminhamento:</span>
                 <span class="info-value">
-                    <span class="encaminhamento-value">Direção</span>
+                    <span class="encaminhamento-value">Psicologia</span>
+                </span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Ocorrencia</span>
+                <span class="info-value">
+                    <span class="Ocorrencia-value"> 5</span>
                 </span>
             </div>
             <div class="info-row">
@@ -170,6 +178,7 @@
         <div class="no-selection" id="noSelection" style="display: none;">
             <p>🔍 Digite o nome ou CGM do estudante na barra de pesquisa acima ou use os filtros para visualizar informações</p>
         </div>
+    </section>
     </main>
 
     <!-- Rodapé da página -->
@@ -183,6 +192,7 @@
             const searchInput = document.getElementById('searchInput');
             const clearSearch = document.getElementById('clearSearch');
             const encaminhamentoFilter = document.getElementById('encaminhamentoFilter');
+            const OcorrenciaFilter = document.getElementById('ocorrenciaFilter')
             const frequenciaFilter = document.getElementById('frequenciaFilter');
             const clearFilters = document.getElementById('clearFilters');
             const studentInfo = document.getElementById('studentInfo');
@@ -216,6 +226,7 @@
             function applyFilters() {
                 const searchTerm = searchInput.value.toLowerCase();
                 const encaminhamento = encaminhamentoFilter.value;
+                const Ocorrencia = OcorrenciaFilter.value;
                 const frequencia = frequenciaFilter.value;
 
                 // Esta é uma demonstração visual básica
