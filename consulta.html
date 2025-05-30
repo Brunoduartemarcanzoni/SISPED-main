@@ -14,7 +14,7 @@
         <div class="logo-container">
             <div class="logo">
                 <!-- Placeholder para o logo institucional -->
-                <img src="imagens/logocmcc.png" alt="Logo Institucional">
+                <img src="imagens/logocmcc.png" alt="Logo Institucional" >
             </div>
         </div>
 
@@ -107,7 +107,7 @@
             <!-- Botão para limpar o campo de pesquisa -->
             <button class="clear-search" id="clearSearch">✕</button>
         </div>
-         <section class="negocio">
+         
         <!-- Container dos filtros dropdown -->
         <div class="filters-container">
             <div class="filter-dropdown">
@@ -146,11 +146,11 @@
             <div class="filter-dropdown">
                 <select class="filter-select" id="frequenciaFilter">
                     <option value="">Todos os F.O</option>
-                    <option value="excelente">Excelente (4,0) </option>
-                    <option value="boa">Bom (1,0- 4,0)</option>
-                    <option value="regular">Regular (-1,0 a 1,0)</option>
+                    <option value="excelente">Excelente (10,0) </option>
+                    <option value="boa">Bom (10,0- 6,0)</option>
+                    <option value="regular">Regular (-6,0 a 1,0)</option>
                     <option value="baixa">Baixo (-1,0 a -4,0)</option>
-                    <option value="baixa">Baixo (>-4,0)</option>
+                    <option value="baixa">MuitoBaixo (>-4,0)</option>
                 </select>
             </div>
             
@@ -180,16 +180,28 @@
                     <span class="encaminhamento-value">Monitoria</span>
                 </span>
             </div>
-            <div class="info-row">
-                <span class="info-label">Ocorrencia</span>
+             <div class="info-row">
+                <span class="info-label">Quantidade de Ocorrencia</span>
+                <span class="info-value">
+                    <span class="encaminhamento-value">5</span>
+                </span>
+            </div>
+            <!-- <div class="info-row">
+                <span class="info-label">Quantidade de Ocorrencia</span>
                 <span class="info-value">
                     <span class="Ocorrencia-value"> 5</span>
                 </span>
-            </div>
+            </div> -->
             <div class="info-row">
                 <span class="info-label">Frequência:</span>
                 <span class="info-value">
                     <span class="frequency-value">95%</span>
+                </span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">F.O</span>
+                <span class="info-value">
+                    <span class="frequency-value">-1,0</span>
                 </span>
             </div>
         </div>
@@ -197,7 +209,7 @@
         <div class="no-selection" id="noSelection" style="display: none;">
             <p>🔍 Digite o nome ou CGM do estudante na barra de pesquisa acima ou use os filtros para visualizar informações</p>
         </div>
-    </section>
+  
     </main>
 
     <!-- Rodapé da página -->

@@ -234,7 +234,7 @@
             width: 90%;
             justify-content: center;
             align-items: center;
-            
+            border-bottom:   #3498db;
         }
 
         .info-row {

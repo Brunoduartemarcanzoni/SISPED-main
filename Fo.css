@@ -135,7 +135,6 @@
             text-align: center;
             margin-bottom: 30px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #3498db;
         }
 
         h1 {
@@ -629,4 +628,128 @@
             font-size: 12px;
             font-weight: bold;
             margin-left: 10px;
+        }
+
+        /* Media query para tablets */
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px;
+                /* Reduz o padding */
+            }
+
+            .nav-container {
+                gap: 10px;
+                /* Reduz o espaço entre itens */
+            }
+
+            /* Reduz o tamanho dos ícones */
+            .nav-icon-container {
+                width: 50px;
+                height: 50px;
+            }
+
+            /* Reduz o tamanho da fonte */
+            .nav-text {
+                font-size: 10px;
+            }
+
+            /* Ajusta o padding da barra de pesquisa */
+            .search-box {
+                padding: 10px 40px 10px 40px;
+            }
+
+            .filters-container {
+                gap: 15px;
+            }
+
+            .filter-dropdown {
+                min-width: 160px;
+            }
+        }
+        
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 576px) {
+
+            /* Reduz o tamanho do logo */
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            /* Transforma o menu em coluna vertical */
+            .nav-container {
+                display: none;
+                /* Esconde inicialmente */
+                width: 100%;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background: linear-gradient(to right, #002346, #003c73);
+                z-index: 100;
+                /* Acima de outros elementos */
+                padding: 10px;
+            }
+
+            /* Classe para mostrar o menu quando ativado */
+            .nav-container.active {
+                display: flex;
+            }
+
+            /* Mostra o botão de menu */
+            .menu-toggle {
+                display: block;
+            }
+
+            /* Ajusta layout dos itens de navegação para horizontal em móveis */
+            .nav-item {
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 12px;
+                gap: 15px;
+            }
+
+            /* Ajusta os containers dos ícones */
+            .nav-icon-container {
+                margin-bottom: 0;
+                width: 40px;
+                height: 40px;
+            }
+
+            /* Reduz o espaço no topo do conteúdo */
+            .content {
+                padding-top: 40px;
+            }
+
+            .filters-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .filter-dropdown {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .clear-filters {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .info-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .info-value {
+                text-align: left;
+            }
+
+            .info-label {
+                min-width: auto;
+            }
         }
